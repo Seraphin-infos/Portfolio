@@ -30,22 +30,24 @@ const menus = navMenu.map((menu) => {
         sousDiv.classList.remove('actif');
     }
     a.addEventListener('click', () => {
-        const m = navMenu.find((el) => {
-            return el.contenue === a.innerHTML
-        })
-        m.actif = true
         const lien = nav.querySelectorAll('a');
         const ligneNav = nav.querySelectorAll('.ligne-nav');
+        // desactivation actif
         for (let aLien of lien) {
             aLien.setAttribute('class', 'nonActif');
         }
         for (let lNav of ligneNav) {
             lNav.classList.remove("actif");
         }
+        // activation actif
         sousDiv.classList.add('actif');
         a.setAttribute('class', 'actif');
-
+        if(menu.href === "#pas"){
+            a.classList.remove("actif");
+            sousDiv.classList.remove("actif");
+        }
     })
+
     nav.append(divCont);
     divCont.append(a);
     divCont.append(sousDiv);
