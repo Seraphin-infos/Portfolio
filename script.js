@@ -9,7 +9,7 @@ let navMenu = [
     { href: "#competences", actif: false, contenue: "Compétences" },
     { href: "#projets", actif: false, contenue: "Projets" },
     { href: "#contact", actif: false, contenue: "Contact" },
-    { href: "#pas", actif: false, contenue: "<i class='fa-light fa-bars bar'></i>" }
+    { href: "#pas", actif: false, contenue: '<i class="fa-solid fa-bars bar"></i>' }
 ]
 
 const menus = navMenu.map((menu) => {
