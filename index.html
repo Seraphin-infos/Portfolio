@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./icone/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Accueil - Portfolio</title>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <header>
+        <div id="logo">
+            <a href="">
+                <h1 class="logo">Séraphin<span>Dev</span></h1>
+            </a>
+        </div>
+        <div class="nav"></div>
+    </header>
+    <!-- Accueil -->
+    <section id="accueil">
+        <div class="opacity">
+            <section class="slogan-container">
+                <div class="image-slogan">
+                    <img src="./image/image-Blur.png" alt="mon image">
+                    <h1 class="tech-slogan techUn">HTML</h1>
+                    <h1 class="tech-slogan techDeux">CSS</h1>
+                    <h1 class="tech-slogan techTrois">JS</h1>
+                </div>
+                <div class="slogan">
+                    <div class="compet-container">
+                        <h1 class="compétence-slogan">Développeur Front-End</h1>
+                        <div class="bordure-gauche-compétence"></div>
+                        <div class="bordure-droite-compétence"></div>
+                    </div>
+                    <p>Je crée des site web <br> simple & moderne</p>
+                    <h2>HTML . CSS . JS</h2>
+                    <a class="btn">Voir mes projets</a>
+                </div>
+            </section>
+        </div>
+
+        <aside>
+            <div class="nav">
+                <div class="nav-cont">
+                    <a href="#accueil">Accueil</a>
+                    <div class="ligne-nav"></div>
+                </div>
+                <div class="nav-cont">
+                    <a href="#a-propos">À propos</a>
+                    <div class="ligne-nav"></div>
+                </div>
+                <div class="nav-cont">
+                    <a href="#competences">Compétences</a>
+                    <div class="ligne-nav"></div>
+                </div>
+                <div class="nav-cont">
+                    <a href="#projets">Projets</a>
+                    <div class="ligne-nav"></div>
+                </div>
+                <div class="nav-cont">
+                    <a href="#contact">Contact</a>
+                    <div class="ligne-nav"></div>
+                </div>
+                <button class="boutonX">X</button>
+            </div>
+        </aside>
+
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="a-propos">
+        <div class="opacitySection">
+            <h1 class="titre-page">À propos</h1>
+            <div class="ligne-titre"></div>
+            <p class="para line">
+                Je suis un passionné d'informatique, actuellement en formation en développement web et informatique générale.
+                Je me maîtrise dans le front-end ( HTML, CSS, JavaScript ) et je continue à apprendre à travers des projets pratiques.
+            </p>
+            <!-- COMPETENCE -->
+            <section id="competences">
+                <h1 class="titre-page"><!--<button class="fas fa-minus-circle icone icoMoins"></button>--> Compétences <!-- <button class="fas fa-plus-circle icone icoPlus icoPC"></button> --></h1>
+                <div class="ligne-titre"></div>
+                <div class="competences-container">
+                    <div class="nom-competence">
+                        <h2>HTML</h2>
+                    </div>
+                    <div class="nom-competence css">
+                        <h2>CSS</h2>
+                    </div>
+                    <div class="nom-competence">
+                        <h2>JS</h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets">
+        <div class="opacitySection">
+            <h1 class="titre-page"><!-- <button class="fas fa-minus-circle icone icoMoins"></button>--> Mes Projets <!-- <button class="fas fa-plus-circle icone icoPlus icoPP"></button> --></h1>
+            <div class="ligne-titre"></div>
+            <div class="projet-container">
+                <div class="projet-box">
+                    <h1 class="titre-projet">Portfolio</h1>
+                    <div class="image-projet">
+                        <img src="./image/Portfolio-Img.png" alt="">
+                    </div>
+                    <div class="description-projet">
+                        <p>Mon potfolio c'est une site que vous pouvez voir tous mon projets en cour, fini et futur projet
+                            pour vous connaissez ma compétence et technique de réalisation</p>
+                        <a href="#" class="voir-plus">Voir plus...</a>
+                    </div>
+                    <div class="techno-projet ">
+                        <button class="techno">HTML</button>
+                        <button class="techno">CSS</button>
+                        <button class="techno">JS</button>
+                    </div>
+                    <div class="lien">
+                        <a href="#" class="lien-projet">Voir mes projets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="espaceGauche">
+
+        </div>
+        <div class="espaceContact">
+            <h1 class="titre-page">Contact</h1>
+            <div class="ligne-titre"></div>
+            <form class="contact-container">
+                <input type="text" class="nom" placeholder="Votre nom..." required><br>
+                <input type="email" class="email" placeholder="Votre email..." required><br>
+                <textarea class="message" placeholder="Votre message..."></textarea><br>
+                <button type="submit" class="envoyez">Envoyez</button>
+            </form>
+        </div>
+    </section>
+    <section class="modal">
+
+    </section>
+
+    <footer>
+        <p><b>© 2026 Séraphin Pascal | Portfolio</b></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
